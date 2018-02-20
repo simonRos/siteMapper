@@ -13,7 +13,7 @@ namespace siteMapper
         public Website Parent { get; set; }
         public string URL { get; set; }
         public List<Page> Links { get; set; }
-        public Page(string url)
+        public Page(string url, Website Parent)
         {
             this.URL = url;
         }
@@ -23,17 +23,17 @@ namespace siteMapper
         }
         public void AddLink(string link)
         {
-            this.Links.Add(new Page(link));
+            this.Links.Add(new Page(link, this.Parent));
         }
         public void AddAllLinks()
         {
             string pageContent = new System.Net.WebClient().DownloadString(this.URL);
             //https://stackoverflow.com/questions/4750015/regular-expression-to-find-urls-within-a-string
-            Regex regx = new Regex("http://([\\w+?\\.\\w+])+([a-zA-Z0-9\\~\\!\\@\\#\\$\\%\\^\\&amp;\\*\\(\\)_\\-\\=\\+\\\\\\/\\?\\.\\:\\;\\'\\,]*)?", RegexOptions.IgnoreCase);
+            Regex regx = new Regex(Parent.Domain + "+([a-zA-Z0-9\\~\\!\\@\\#\\$\\%\\^\\&amp;\\*\\(\\)_\\-\\=\\+\\\\\\/\\?\\.\\:\\;\\'\\,]*)?", RegexOptions.IgnoreCase);
             MatchCollection matches = regx.Matches(pageContent);
             foreach (Match match in matches)
             {
-                if (this.Links.Contains(new Page(match.ToString()))) //Links already contain a page with this url
+                if (this.Links.Contains(new Page(match.ToString(), this.Parent))) //Links already contain a page with this url
                 {
                     Page existingPage = Parent.Pages.Find(x => x.URL == match.ToString());
                     AddLink(existingPage);
@@ -56,7 +56,7 @@ namespace siteMapper
 
     class Website : IEquatable<Website>
     {
-        public string Domain { get; }
+        public string Domain { get; set; }
         public List<Page> Pages { get; set; }
         public Website(string domain)
         {
@@ -69,13 +69,13 @@ namespace siteMapper
         }
         public void AddPage(string link)
         {
-            this.Pages.Add(new Page(link));
+            this.Pages.Add(new Page(link, this));
         }
         public void AddAllPages()
         {
-            foreach(Page p in Pages)
+            foreach (Page p in Pages)
             {
-
+                p.AddAllLinks();
             }
         }
         public bool Equals(Website other)
@@ -97,22 +97,6 @@ namespace siteMapper
         [STAThread]
         static void Main()
         {
-            //start console stuff
-            Console.WriteLine("Please enter url in the following format");
-            Console.WriteLine("http://website.com/Main");
-            string startPage = Console.ReadLine();
-            Website site = new Website(startPage);
-
-
-
-
-
-
-            //end console stuff
-
-
-
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

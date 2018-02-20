@@ -1,0 +1,10 @@
+C:\Users\Simon\Google Drive\Projects\siteMapper\siteMapper\bin\Debug\siteMapper.exe.config
+C:\Users\Simon\Google Drive\Projects\siteMapper\siteMapper\bin\Debug\siteMapper.exe
+C:\Users\Simon\Google Drive\Projects\siteMapper\siteMapper\bin\Debug\siteMapper.pdb
+C:\Users\Simon\Google Drive\Projects\siteMapper\siteMapper\obj\Debug\siteMapper.csprojResolveAssemblyReference.cache
+C:\Users\Simon\Google Drive\Projects\siteMapper\siteMapper\obj\Debug\siteMapper.Form1.resources
+C:\Users\Simon\Google Drive\Projects\siteMapper\siteMapper\obj\Debug\siteMapper.Properties.Resources.resources
+C:\Users\Simon\Google Drive\Projects\siteMapper\siteMapper\obj\Debug\siteMapper.csproj.GenerateResource.Cache
+C:\Users\Simon\Google Drive\Projects\siteMapper\siteMapper\obj\Debug\siteMapper.csproj.CoreCompileInputs.cache
+C:\Users\Simon\Google Drive\Projects\siteMapper\siteMapper\obj\Debug\siteMapper.exe
+C:\Users\Simon\Google Drive\Projects\siteMapper\siteMapper\obj\Debug\siteMapper.pdb
