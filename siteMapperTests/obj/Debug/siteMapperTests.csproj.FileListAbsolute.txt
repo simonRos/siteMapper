@@ -1,0 +1,16 @@
+C:\Users\Simon\Google Drive\Projects\siteMapper\siteMapperTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Simon\Google Drive\Projects\siteMapper\siteMapperTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Simon\Google Drive\Projects\siteMapper\siteMapperTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Simon\Google Drive\Projects\siteMapper\siteMapperTests\bin\Debug\siteMapperTests.dll
+C:\Users\Simon\Google Drive\Projects\siteMapper\siteMapperTests\bin\Debug\siteMapperTests.pdb
+C:\Users\Simon\Google Drive\Projects\siteMapper\siteMapperTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Simon\Google Drive\Projects\siteMapper\siteMapperTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Simon\Google Drive\Projects\siteMapper\siteMapperTests\bin\Debug\siteMapper.exe
+C:\Users\Simon\Google Drive\Projects\siteMapper\siteMapperTests\bin\Debug\siteMapper.pdb
+C:\Users\Simon\Google Drive\Projects\siteMapper\siteMapperTests\bin\Debug\siteMapper.exe.config
+C:\Users\Simon\Google Drive\Projects\siteMapper\siteMapperTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Simon\Google Drive\Projects\siteMapper\siteMapperTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Simon\Google Drive\Projects\siteMapper\siteMapperTests\obj\Debug\siteMapperTests.csprojResolveAssemblyReference.cache
+C:\Users\Simon\Google Drive\Projects\siteMapper\siteMapperTests\obj\Debug\siteMapperTests.csproj.CoreCompileInputs.cache
+C:\Users\Simon\Google Drive\Projects\siteMapper\siteMapperTests\obj\Debug\siteMapperTests.dll
+C:\Users\Simon\Google Drive\Projects\siteMapper\siteMapperTests\obj\Debug\siteMapperTests.pdb
