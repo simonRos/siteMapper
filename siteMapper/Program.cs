@@ -8,7 +8,7 @@ using System.Windows.Forms;
 namespace siteMapper
 {
     //objects
-    class Page : IEquatable<Page>
+    public class Page : IEquatable<Page>
     {
         public Website Parent { get; set; }
         public string URL { get; set; }
@@ -16,6 +16,7 @@ namespace siteMapper
         public Page(string url, Website Parent)
         {
             this.URL = url;
+            Parent.AddPage(this);
         }
         public void AddLink(Page link)
         {
@@ -46,7 +47,7 @@ namespace siteMapper
         }
         public bool Equals(Page other)
         {
-            if (this.URL == other.URL)
+            if (this.URL == other.URL && this.Parent.Equals(other.Parent))
             {
                 return true;
             }
@@ -54,7 +55,7 @@ namespace siteMapper
         }
     }
 
-    class Website : IEquatable<Website>
+    public class Website : IEquatable<Website>
     {
         public string Domain { get; set; }
         public List<Page> Pages { get; set; }
